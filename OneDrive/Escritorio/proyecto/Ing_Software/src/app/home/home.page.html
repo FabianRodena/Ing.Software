@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+     <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+  <ion-card-content>
+    <ion-label>WhatsApp</ion-label>
+    <ion-label>IG</ion-label>   
+  </ion-card-content>
+ </ion-header>
+ 
+ <ion-content>
+ 
+     <ion-card-content>
+       <ion-list>
+         <ion-item>
+           <ion-label>Edificio:</ion-label>
+           <ion-input type="text" value="Nombre_edificio"></ion-input>
+         </ion-item>
+         <ion-item>
+           <ion-label>Departamento:</ion-label>
+           <ion-input type="text" value="Nºdepto"></ion-input>
+         </ion-item>
+         <ion-item>
+           <ion-label>Estado</ion-label>
+           <ion-select>
+             <ion-select-option value="pagado">Pagado</ion-select-option>
+             <ion-select-option value="deuda">En Deuda</ion-select-option>
+           </ion-select>
+         </ion-item>
+       </ion-list>
+     </ion-card-content>
+  
+ 
+     <ion-button (click)="revisarDatos()" expand="block" fill="outline">Revisar Datos</ion-button>
+     <ion-button (click)="historialPagos()" expand="block" fill="outline">Historial de Pagos</ion-button>
+     <ion-button (click)="pagarMensualidad()" expand="block" fill="outline">Pagar Mensualidad</ion-button>
+     
+ 
+  <ion-card>
+     <ion-card-header>
+       <ion-card-title>Contacto</ion-card-title>
+     </ion-card-header>
+ 
+     <ion-card-content>
+       <ion-item>
+         <ion-icon name="call"></ion-icon>
+         <ion-label>+569 12345678</ion-label>
+       </ion-item>
+       <ion-item>
+         <ion-icon name="mail"></ion-icon>
+         <ion-label>correo.ejemplo&#64;gmail.com</ion-label>
+       </ion-item>
+       <ion-item>
+         <ion-icon name="time"></ion-icon>
+         <ion-label>Lun - Vie 09:00 - 17:00</ion-label>
+       </ion-item>
+     </ion-card-content>
+  </ion-card>
+ </ion-content>
