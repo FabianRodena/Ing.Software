@@ -2,19 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-historial-pagos',
-  templateUrl: './historial-pagos.page.html',
-  styleUrls: ['./historial-pagos.page.scss'],
+  selector: 'app-soporte',
+  templateUrl: './soporte.page.html',
+  styleUrls: ['./soporte.page.scss'],
 })
-export class HistorialPagosPage {
+export class SoportePage {
 
   constructor(private navCtrl: NavController) {}
 
-  soporte() {
-    // Lógica que quieras ejecutar antes de navegar, si es necesario
-    this.navCtrl.navigateForward('soporte');
-
-  }
   login() {
     // Lógica que quieras ejecutar antes de navegar, si es necesario
     this.navCtrl.navigateForward('login');

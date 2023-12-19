@@ -1,16 +1,49 @@
 <!-- historial-pagos.page.html -->
-<ion-header>
+<ion-header class="header">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/home"></ion-back-button>
     </ion-buttons>
-    <ion-title>Historial de Pagos</ion-title>
+    <ion-grid class="titulo">
+      <ion-row>
+        <ion-col><h4>Historial pagos</h4></ion-col>
+        <ion-col>
+          <ion-button class="botonUser" (click)="login()" expand="block" ><ion-icon name="person-circle-outline"></ion-icon></ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
+  <ion-card-content class="iconos">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="tamaño"><ion-icon class="whatsApp" name="logo-whatsapp"></ion-icon></ion-col>
+        <ion-col class="tamaño"><ion-icon class="instagram" name="logo-instagram"></ion-icon></ion-col>
+      </ion-row>
+    </ion-grid> 
+    </ion-card-content>
 </ion-header>
 
 <ion-content>
-  <h2>Edificio: Nombre edificio</h2>
-  <h3>Departamento / s: Nºdepto</h3>
+  <div class="cuerpo">
+  <ion-card-content class="datos">
+    <ion-list>
+      <ion-item>
+        <ion-label>Edificio:</ion-label>
+        <ion-input type="text" value="Nombre_edificio"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Departamento:</ion-label>
+        <ion-input type="text" value="Nºdepto"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Estado</ion-label>
+        <ion-select>
+          <ion-select-option value="pagado">Pagado</ion-select-option>
+          <ion-select-option value="deuda">En Deuda</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
 
   <ion-list>
     <ion-item-divider color="primary">
@@ -30,7 +63,7 @@
     <ion-item>
       <ion-label>Pago 2</ion-label>
       <ion-label>Dís/Mes/Año</ion-label>
-      <ion-label>DINERO_CLP</ion-label>
+      <ion-label>DINERO CLP</ion-label>
       <ion-label><a href="#" class="comprobante">Descargar comprobante</a></ion-label>
     </ion-item>
 
@@ -41,32 +74,41 @@
       <ion-label><a href="#" class="comprobante">Descargar comprobante</a></ion-label>
     </ion-item>
   </ion-list>
+  <ion-card-content class="datos">
+    <h3>Recordatorio</h3>
+    <p>En esta sección se dejan por escrito todas las reglas y leyes relacionadas con los pagos de las mensualidades de gastos comunes del condominio en cuestión.</p>
 
-  <h3>Recordatorio</h3>
-  <p>En esta sección se dejan por escrito todas las reglas y leyes relacionadas con los pagos de las mensualidades de gastos comunes del condominio en cuestión.</p>
-
-  <h3>EJEMPLOS</h3>
-  <h3>EJEMPLOS</h3>
-  <h3>EJEMPLOS</h3>
-  <p>Agradecemos su comprensión</p>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Contacto</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-item>
-        <ion-icon name="call"></ion-icon>
-        <ion-label>+569 12345678</ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-icon name="mail"></ion-icon>
-        <ion-label>correo.ejemplo&#64;gmail.com</ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-icon name="time"></ion-icon>
-        <ion-label>Lun - Vie 09:00 - 17:00</ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
+    <h5>EJEMPLOS</h5>
+    <h5>EJEMPLOS</h5>
+    <h5>EJEMPLOS</h5>
+    <p>Agradecemos su comprensión</p>
+  </ion-card-content>
+  <div class="botones">
+  <ion-item>
+    <ion-button class="bSoporte" (click)="soporte()" expand="block" fill="outline">Soporte</ion-button>
+  </ion-item>
+</div>
+</div>
+  <div class="abajo">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Contacto</ion-card-title>
+      </ion-card-header>
+  
+      <ion-card-content class="datosFooter">
+        <ion-item class="ph">
+          <ion-icon name="call"></ion-icon>
+          <ion-label>+569 12345678</ion-label>
+        </ion-item>
+        <ion-item class="mail">
+          <ion-icon name="mail"></ion-icon>
+          <ion-label>correo.ejemplo&#64;gmail.com</ion-label>
+        </ion-item>
+        <ion-item class="hora">
+          <ion-icon name="time"></ion-icon>
+          <ion-label>Lun - Vie 09:00 - 17:00</ion-label>
+        </ion-item>
+      </ion-card-content>
+   </ion-card>
+  </div>
 </ion-content>

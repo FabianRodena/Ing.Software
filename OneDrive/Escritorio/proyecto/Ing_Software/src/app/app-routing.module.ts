@@ -22,7 +22,15 @@ const routes: Routes = [
   {
     path: 'pagar-mensualidad',
     loadChildren: () => import('./pagar-mensualidad/pagar-mensualidad.module').then( m => m.PagarMensualidadPageModule)
+  },  {
+    path: 'soporte',
+    loadChildren: () => import('./soporte/soporte.module').then( m => m.SoportePageModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+
 ];
 
 @NgModule({

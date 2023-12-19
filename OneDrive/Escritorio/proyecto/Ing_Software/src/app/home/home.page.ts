@@ -24,4 +24,12 @@ export class HomePage {
     // Lógica que quieras ejecutar antes de navegar, si es necesario
     this.navCtrl.navigateForward('pagar-mensualidad');
   }
+  soporte() {
+    // Lógica que quieras ejecutar antes de navegar, si es necesario
+    this.navCtrl.navigateForward('soporte');
+  }
+  login() {
+    // Lógica que quieras ejecutar antes de navegar, si es necesario
+    this.navCtrl.navigateForward('login');
+  }
 }

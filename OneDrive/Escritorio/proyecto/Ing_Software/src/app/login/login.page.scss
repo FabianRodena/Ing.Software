@@ -10,9 +10,8 @@
 .cuerpo{
     background-image: url(https://img.freepik.com/foto-gratis/paisaje-analogico-ciudad-edificios_23-2149661456.jpg?size=626&ext=jpg&ga=GA1.1.1687694167.1702684800&semt=sph);
     margin-bottom: 0%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    text-align: center;
+    color: white;
 }
 .iconos{
     background-color: #7799DB;
@@ -56,7 +55,7 @@ ion-card{
     padding-bottom: 0%;
 }
 ion-button{
-    --background: transparent;
+    --background: black;
     --background-activated: #7799DB;
     padding-left: 30%;
     padding-right: 30%;
@@ -72,4 +71,18 @@ ion-button{
 .mail{
     --background: transparent;
     --color: white;
+}
+.imagen{
+    background-image: url(https://condominiovistasur.cl/wp-content/uploads/2020/03/Vista-Sur-Logo-nuevo.png);
+    text-align: center;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 10%;
+    background-color: black;
+}
+ion-input{
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #3F3F3F;
 }

@@ -1,0 +1,74 @@
+<ion-header class="header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title><h1>Login</h1></ion-title>
+  </ion-toolbar>
+  <ion-card-content class="iconos">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="tamaño"><ion-icon class="whatsApp" name="logo-whatsapp"></ion-icon></ion-col>
+        <ion-col class="tamaño"><ion-icon class="instagram" name="logo-instagram"></ion-icon></ion-col>
+      </ion-row>
+    </ion-grid> 
+    </ion-card-content>
+</ion-header>
+
+<ion-content>
+  <div class="cuerpo">
+  <ion-card-content>
+
+  <ion-list>
+    <ion-card class="imagen"></ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col><ion-item>Rut</ion-item></ion-col>
+        <ion-col>Ej: 11.111.111-k</ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ion-input type="text" value=""></ion-input>
+    <ion-item>Clave</ion-item>
+    <ion-input type="text" value=""></ion-input>
+    <ion-item>Clave</ion-item>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>¿No recuerda su clave?</ion-col>
+        <ion-col>
+          <ion-button expand="block" fill="outline">Recuperar</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-button expand="block" fill="outline">Ingresar</ion-button>
+  </ion-list>
+  </ion-card-content>
+
+  <ion-item>
+    <ion-button class="bSoporte" (click)="soporte()" expand="block" fill="outline">soporte</ion-button>
+  </ion-item>
+</div>
+  <div class="footer">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Contacto</ion-card-title>
+      </ion-card-header>
+  
+      <ion-card-content class="datosFooter">
+        <ion-item class="ph">
+          <ion-icon name="call"></ion-icon>
+          <ion-label>+569 12345678</ion-label>
+        </ion-item>
+        <ion-item class="mail">
+          <ion-icon name="mail"></ion-icon>
+          <ion-label>correo.ejemplo&#64;gmail.com</ion-label>
+        </ion-item>
+        <ion-item class="hora">
+          <ion-icon name="time"></ion-icon>
+          <ion-label>Lun - Vie 09:00 - 17:00</ion-label>
+        </ion-item>
+      </ion-card-content>
+   </ion-card>
+  </div>
+</ion-content>

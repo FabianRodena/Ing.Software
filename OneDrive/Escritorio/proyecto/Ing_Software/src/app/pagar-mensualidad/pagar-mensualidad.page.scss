@@ -1,0 +1,80 @@
+.titulo{
+    text-align: center;
+}
+.toolbar-container {
+    padding-inline-start: 0%;
+    padding-inline-end: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+.cuerpo{
+    background-image: url(https://img.freepik.com/foto-gratis/paisaje-analogico-ciudad-edificios_23-2149661456.jpg?size=626&ext=jpg&ga=GA1.1.1687694167.1702684800&semt=sph);
+    margin-bottom: 0%;
+}
+.iconos{
+    background-color: #7799DB;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+.bUser{
+   margin-left: 10%;
+   margin-top: 3%;
+   --background: transparent;
+   width: 100%;
+   height: 100%;
+}
+
+.abajo{
+    background-image: url(https://us.123rf.com/450wm/srckomkrit/srckomkrit1609/srckomkrit160900802/62174954-edificio-de-condominio-en-l%C3%ADnea-y-blanco-negro.jpg);
+}
+.whatsApp{
+    width: 40px;
+    height: 40px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.instagram{
+    width: 40px;
+    height: 40px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.tamaño{
+    width: 40px;
+    height: 40px;
+}
+ion-card{
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+ion-button{
+    --background: transparent;
+    --background-activated: #7799DB;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+ion-item{
+    --background: transparent;
+}
+.WebPay{
+    background-image: url(https://www.larce.cl/wp-content/uploads/2020/05/logo-webpay-cl-n.png);
+    text-align: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30%; 
+}
+.pagoDirecto{
+    background-color: white;
+    color: black;
+}
+.bPagarAqui{
+    --background: red;
+    --color: white;
+}
